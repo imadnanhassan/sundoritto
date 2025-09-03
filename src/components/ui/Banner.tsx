@@ -11,13 +11,14 @@ import {
   ArrowBigRight,
 } from "lucide-react";
 import Button from "@/lib/ui/Button";
+import Header from "../shared/Header";
 
 const Banner = () => {
   const slides = [
     {
       id: 1,
       image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+        "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "আধুনিক ব্যবসার জন্য ডিজিটাল সমাধান",
       subtitle: "আপনার ব্যবসাকে এগিয়ে নিয়ে যান প্রযুক্তির সাথে",
       description:
@@ -28,7 +29,7 @@ const Banner = () => {
     {
       id: 2,
       image:
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+        "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "ই-কমার্স এর নতুন যুগে স্বাগতম",
       subtitle: "অনলাইন বিক্রয়ে এগিয়ে থাকুন",
       description:
@@ -43,7 +44,7 @@ const Banner = () => {
     {
       id: 3,
       image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+        "https://images.unsplash.com/photo-1522108098940-de49801b5b40?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "ডেটা অ্যানালিটিক্স ও AI সল্যুশন",
       subtitle: "স্মার্ট সিদ্ধান্ত নিন ডেটার ভিত্তিতে",
       description:
@@ -116,6 +117,9 @@ const Banner = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
+      {/* Header */}
+      {/* <Header /> */}
+
       {/* Background Images */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
