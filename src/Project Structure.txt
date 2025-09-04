@@ -1,0 +1,232 @@
+src/
+├── app/
+│   ├── (auth)/
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   ├── register/
+│   │   │   └── page.tsx
+│   │   ├── forgot-password/
+│   │   │   └── page.tsx
+│   │   └── layout.tsx
+│   │
+│   ├── (frontend)/
+│   │   ├── (home)/
+│   │   │   └── page.tsx
+│   │   ├── products/
+│   │   │   ├── page.tsx
+│   │   │   ├── [id]/
+│   │   │   │   └── page.tsx
+│   │   │   └── category/
+│   │   │       └── [slug]/
+│   │   │           └── page.tsx
+│   │   ├── cart/
+│   │   │   └── page.tsx
+│   │   ├── checkout/
+│   │   │   └── page.tsx
+│   │   ├── orders/
+│   │   │   ├── page.tsx
+│   │   │   └── [id]/
+│   │   │       └── page.tsx
+│   │   ├── profile/
+│   │   │   ├── page.tsx
+│   │   │   ├── edit/
+│   │   │   │   └── page.tsx
+│   │   │   └── addresses/
+│   │   │       └── page.tsx
+│   │   ├── contact/
+│   │   │   └── page.tsx
+│   │   ├── about/
+│   │   │   └── page.tsx
+│   │   └── layout.tsx
+│   │
+│   ├── (dashboard)/
+│   │   ├── dashboard/
+│   │   │   └── page.tsx
+│   │   ├── products/
+│   │   │   ├── page.tsx
+│   │   │   ├── create/
+│   │   │   │   └── page.tsx
+│   │   │   ├── [id]/
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── edit/
+│   │   │   │       └── page.tsx
+│   │   │   └── categories/
+│   │   │       ├── page.tsx
+│   │   │       ├── create/
+│   │   │       │   └── page.tsx
+│   │   │       └── [id]/
+│   │   │           └── edit/
+│   │   │               └── page.tsx
+│   │   ├── orders/
+│   │   │   ├── page.tsx
+│   │   │   └── [id]/
+│   │   │       └── page.tsx
+│   │   ├── customers/
+│   │   │   ├── page.tsx
+│   │   │   └── [id]/
+│   │   │       └── page.tsx
+│   │   ├── analytics/
+│   │   │   └── page.tsx
+│   │   ├── settings/
+│   │   │   ├── page.tsx
+│   │   │   ├── general/
+│   │   │   │   └── page.tsx
+│   │   │   ├── payment/
+│   │   │   │   └── page.tsx
+│   │   │   └── shipping/
+│   │   │       └── page.tsx
+│   │   ├── banners/
+│   │   │   ├── page.tsx
+│   │   │   ├── create/
+│   │   │   │   └── page.tsx
+│   │   │   └── [id]/
+│   │   │       └── edit/
+│   │   │           └── page.tsx
+│   │   └── layout.tsx
+│   │
+│   ├── globals.css
+│   └── layout.tsx
+│
+├── components/
+│   ├── frontend/
+│   │   ├── Banner.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── CategoryGrid.tsx
+│   │   ├── FeaturedProducts.tsx
+│   │   ├── FlashSale.tsx
+│   │   ├── TopBrands.tsx
+│   │   ├── ProductCard.tsx
+│   │   ├── ProductDetail.tsx
+│   │   ├── CartSidebar.tsx
+│   │   ├── CheckoutForm.tsx
+│   │   ├── UserProfile.tsx
+│   │   ├── ProductFilter.tsx
+│   │   ├── ProductSort.tsx
+│   │   ├── WishlistButton.tsx
+│   │   ├── ReviewForm.tsx
+│   │   ├── ProductReviews.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── dashboard/
+│   │   ├── Sidebar.tsx
+│   │   ├── DashboardHeader.tsx
+│   │   ├── StatsCard.tsx
+│   │   ├── OrdersTable.tsx
+│   │   ├── ProductsTable.tsx
+│   │   ├── CustomersTable.tsx
+│   │   ├── ProductForm.tsx
+│   │   ├── CategoryForm.tsx
+│   │   ├── BannerForm.tsx
+│   │   ├── AnalyticsChart.tsx
+│   │   ├── FileUpload.tsx
+│   │   ├── DataTable.tsx
+│   │   ├── OrderStatus.tsx
+│   │   ├── InventoryManager.tsx
+│   │   └── SettingsForm.tsx
+│   │
+│   ├── shared/
+│   │   ├── Header.tsx
+│   │   ├── Navigation.tsx
+│   │   ├── SearchBar.tsx
+│   │   ├── Breadcrumb.tsx
+│   │   ├── Pagination.tsx
+│   │   ├── LoadingSpinner.tsx
+│   │   ├── Modal.tsx
+│   │   ├── Toast.tsx
+│   │   ├── ConfirmDialog.tsx
+│   │   ├── EmptyState.tsx
+│   │   ├── ErrorBoundary.tsx
+│   │   └── ImageUpload.tsx
+│   │
+│   └── auth/
+│       ├── LoginForm.tsx
+│       ├── RegisterForm.tsx
+│       ├── ForgotPasswordForm.tsx
+│       ├── ResetPasswordForm.tsx
+│       └── ProtectedRoute.tsx
+│
+├── lib/
+│   ├── ui/
+│   │   ├── Button.tsx
+│   │   ├── Input.tsx
+│   │   ├── Select.tsx
+│   │   ├── Textarea.tsx
+│   │   ├── Checkbox.tsx
+│   │   ├── Radio.tsx
+│   │   ├── Card.tsx
+│   │   ├── Badge.tsx
+│   │   ├── Alert.tsx
+│   │   ├── Table.tsx
+│   │   ├── Tabs.tsx
+│   │   ├── Dropdown.tsx
+│   │   ├── Switch.tsx
+│   │   ├── Progress.tsx
+│   │   └── Skeleton.tsx
+│   │
+│   ├── redux/
+│   │   ├── store.ts
+│   │   ├── rootReducer.ts
+│   │   ├── api/
+│   │   │   ├── baseApi.ts
+│   │   │   ├── authApi.ts
+│   │   │   ├── productsApi.ts
+│   │   │   ├── ordersApi.ts
+│   │   │   ├── categoriesApi.ts
+│   │   │   ├── customersApi.ts
+│   │   │   ├── bannersApi.ts
+│   │   │   ├── cartApi.ts
+│   │   │   ├── wishlistApi.ts
+│   │   │   └── analyticsApi.ts
+│   │   ├── slices/
+│   │   │   ├── authSlice.ts
+│   │   │   ├── uiSlice.ts
+│   │   │   ├── cartSlice.ts
+│   │   │   └── filterSlice.ts
+│   │   └── middleware/
+│   │       ├── authMiddleware.ts
+│   │       └── errorMiddleware.ts
+│   │
+│   ├── utils/
+│   │   ├── auth.ts
+│   │   ├── validation.ts
+│   │   ├── formatters.ts
+│   │   ├── constants.ts
+│   │   ├── helpers.ts
+│   │   ├── localStorage.ts
+│   │   ├── cookies.ts
+│   │   └── imageUtils.ts
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   ├── useCart.ts
+│   │   ├── useLocalStorage.ts
+│   │   ├── useDebounce.ts
+│   │   ├── usePagination.ts
+│   │   ├── useSort.ts
+│   │   ├── useFilter.ts
+│   │   ├── useModal.ts
+│   │   └── useToast.ts
+│   │
+│   └── types/
+│       ├── auth.ts
+│       ├── product.ts
+│       ├── order.ts
+│       ├── user.ts
+│       ├── category.ts
+│       ├── banner.ts
+│       ├── cart.ts
+│       ├── wishlist.ts
+│       ├── api.ts
+│       └── common.ts
+│
+├── providers/
+│   ├── ReduxProvider.tsx
+│   ├── AuthProvider.tsx
+│   └── ToastProvider.tsx
+│
+├── middleware.ts
+├── next.config.js
+├── tailwind.config.js
+├── tsconfig.json
+├── package.json
+└── README.md

@@ -117,9 +117,6 @@ const Banner = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
-      {/* Header */}
-      {/* <Header /> */}
-
       {/* Background Images */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -280,7 +277,7 @@ const Banner = () => {
       </div>
 
       {/* Custom Styles */}
-      <style jsx>{`
+      <style>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;

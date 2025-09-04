@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Banner from "@/components/ui/Banner";
+import Banner from "@/components/frontend/Banner";
 
 const Home = () => {
   return (

@@ -1,3 +1,5 @@
+"üse client"
+
 import { useState } from "react";
 import { Menu, X, ShoppingCart, Search, User } from "lucide-react";
 import Link from "next/link";

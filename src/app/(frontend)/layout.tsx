@@ -1,6 +1,7 @@
+"use client";
 import Header from "@/components/shared/Header";
 
-const CommonLayout = ({ children }: { children: React.ReactNode }) => {
+const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Header />
@@ -16,4 +17,4 @@ const CommonLayout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default CommonLayout;
+export default FrontendLayout;
