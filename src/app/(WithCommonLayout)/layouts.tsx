@@ -1,18 +1,10 @@
-"use client";
-
-import React from "react";
-import Banner from "@/components/ui/Banner";
 import Header from "@/components/shared/Header";
 
-const Home = () => {
+const CommonLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className=" bg-gray-100">
+    <>
       <Header />
-      <Banner />
-
-
-
-     
+      <main className="min-h-screen">{children}</main>
       <footer className="py-10">
         <div className="container mx-auto text-center">
           <p className="text-gray-600">
@@ -20,8 +12,8 @@ const Home = () => {
           </p>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 
-export default Home;
+export default CommonLayout;

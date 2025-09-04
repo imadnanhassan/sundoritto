@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Baloo_Da_2 } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const balooDa2 = Baloo_Da_2({
   subsets: ["bengali", "latin"],
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="bn">
-      <body className={balooDa2.className}>{children}</body>
+      <body className={balooDa2.className}>
+        <Toaster richColors position="top-center" />
+        {children}
+      </body>
     </html>
   );
 }
