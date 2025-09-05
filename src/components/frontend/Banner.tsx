@@ -11,7 +11,6 @@ import {
   ArrowBigRight,
 } from "lucide-react";
 import Button from "@/lib/ui/Button";
-import Header from "../shared/Header";
 
 const Banner = () => {
   const slides = [
@@ -19,41 +18,45 @@ const Banner = () => {
       id: 1,
       image:
         "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "আধুনিক ব্যবসার জন্য ডিজিটাল সমাধান",
-      subtitle: "আপনার ব্যবসাকে এগিয়ে নিয়ে যান প্রযুক্তির সাথে",
+      title: "আপনার সৌন্দর্যের জন্য প্রিমিয়াম পণ্য",
+      subtitle: "আপনার ত্বক ও চুলের যত্নে নতুন মাত্রা",
       description:
-        "আমরা তৈরি করি অসাধারণ ওয়েব অ্যাপ্লিকেশন যা আপনার ব্র্যান্ডকে নতুন উচ্চতায় পৌঁছে দেয়।",
+        "আমরা অফার করি প্রাকৃতিক ও উচ্চমানের বিউটি প্রোডাক্ট যা আপনার সৌন্দর্যকে আরও উজ্জ্বল করবে।",
       buttonText: "আরো জানুন",
-      features: ["রেসপন্সিভ ডিজাইন", "দ্রুত লোডিং", "SEO অপ্টিমাইজড"],
+      features: [
+        "প্রাকৃতিক উপাদান",
+        "দ্রুত ডেলিভারি",
+        "ত্বকের ধরণ অনুযায়ী পণ্য",
+      ],
     },
     {
       id: 2,
       image:
         "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "ই-কমার্স এর নতুন যুগে স্বাগতম",
-      subtitle: "অনলাইন বিক্রয়ে এগিয়ে থাকুন",
+      title: "বিউটি কেয়ারে ই-কমার্সের নতুন অভিজ্ঞতা",
+      subtitle: "আপনার প্রিয় পণ্য এখন এক ক্লিকে",
       description:
-        "শক্তিশালী ই-কমার্স প্ল্যাটফর্ম দিয়ে আপনার পণ্য বিক্রি করুন সারা বিশ্বে।",
-      buttonText: "শুরু করুন",
+        "আমাদের ই-কমার্স প্ল্যাটফর্মের মাধ্যমে বিশ্বমানের বিউটি প্রোডাক্ট কিনুন সহজে ও নিরাপদে।",
+      buttonText: "শপিং শুরু করুন",
       features: [
-        "নিরাপদ পেমেন্ট",
-        "ইনভেন্টরি ম্যানেজমেন্ট",
-        "কাস্টমার সাপোর্ট",
+        "নিরাপদ পেমেন্ট সিস্টেম",
+        "পণ্য ফিল্টারিং",
+        "২৪/৭ কাস্টমার সাপোর্ট",
       ],
     },
     {
       id: 3,
       image:
         "https://images.unsplash.com/photo-1522108098940-de49801b5b40?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "ডেটা অ্যানালিটিক্স ও AI সল্যুশন",
-      subtitle: "স্মার্ট সিদ্ধান্ত নিন ডেটার ভিত্তিতে",
+      title: "পার্সোনালাইজড বিউটি সল্যুশন",
+      subtitle: "আপনার সৌন্দর্যের চাহিদা পূরণ করুন",
       description:
-        "কৃত্রিম বুদ্ধিমত্তা ও ডেটা বিশ্লেষণের মাধ্যমে আপনার ব্যবসায়িক লক্ষ্য অর্জন করুন।",
-      buttonText: "ডেমো দেখুন",
+        "আমাদের ডেটা-চালিত সুপারিশের মাধ্যমে আপনার ত্বক ও চুলের জন্য সঠিক পণ্য খুঁজুন।",
+      buttonText: "এখনই দেখুন",
       features: [
-        "রিয়েল-টাইম ডেটা",
-        "প্রেডিক্টিভ অ্যানালিসিস",
-        "কাস্টম রিপোর্ট",
+        "ত্বকের ধরণ বিশ্লেষণ",
+        "পার্সোনালাইজড প্রোডাক্ট",
+        "বিশেষজ্ঞ পরামর্শ",
       ],
     },
   ];
@@ -177,7 +180,7 @@ const Banner = () => {
                       }s both`,
                     }}
                   >
-                    <CheckCircle2 className="w-5 h-5 text-green-400" />
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
                     <span className="text-sm font-medium">{feature}</span>
                   </div>
                 ))}
@@ -194,7 +197,7 @@ const Banner = () => {
                   variant="primary"
                   size="md"
                   rightIcon={<ArrowBigRight size={16} />}
-                  className="bg-blue-600 hover:bg-blue-700"
+                  className="bg-primary hover:bg-primary-hover transition-colors duration-200"
                 >
                   <span>{currentSlideData.buttonText}</span>
                 </Button>
@@ -248,16 +251,16 @@ const Banner = () => {
               className="group relative"
               aria-label={`Go to slide ${index + 1}`}
             >
-              <div className="w-12 h-2 rounded-full bg-white/30 overflow-hidden">
+              <div className="w-12 h-2 rounded-full bg-primary/30 overflow-hidden">
                 <div
-                  className={`h-full bg-white transition-all duration-300 ${
+                  className={`h-full bg-primary transition-all duration-300 ${
                     index === currentSlide ? "w-full" : "w-0"
                   }`}
                 />
               </div>
               {index === currentSlide && (
                 <div
-                  className="absolute -top-1 left-0 w-full h-4 bg-white/50 rounded-full animate-pulse"
+                  className="absolute -top-1 left-0 w-full h-4 bg-primary/50 rounded-full animate-pulse"
                   style={{
                     animation: "progress 5s linear infinite",
                   }}
@@ -265,14 +268,6 @@ const Banner = () => {
               )}
             </button>
           ))}
-        </div>
-      </div>
-
-      {/* Keyboard Instructions */}
-      <div className="absolute bottom-8 right-8 z-20 text-white/60 text-sm">
-        <div className="bg-black/30 backdrop-blur-sm rounded-lg p-3 space-y-1">
-          <div>← → নেভিগেশন</div>
-          <div>স্পেসবার প্লে/পজ</div>
         </div>
       </div>
 
