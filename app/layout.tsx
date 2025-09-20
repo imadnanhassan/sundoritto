@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="bn">
       <body className={balooDa2.className} suppressHydrationWarning>
-        <main className="min-h-screen pt-16">
+        <main className="min-h-screen ">
           {children}
           <Toaster richColors position="bottom-right" />
         </main>

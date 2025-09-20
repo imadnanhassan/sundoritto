@@ -1,5 +1,6 @@
 "use client";
 
+import PageHeader from "@/components/shared/PageHeader";
 import {
   ArrowRight,
   Minus,
@@ -115,8 +116,10 @@ const CartPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-white to-pink-50 py-8 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-white to-pink-50 py-10 sm:py-16 lg:py-20">
+      <PageHeader />
+
+      <div className="container mx-auto pt-6 sm:pt-8 lg:pt-10">
         {/* Header */}
         <div className="mb-8 flex justify-between items-center">
           <div>

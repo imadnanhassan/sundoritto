@@ -1,4 +1,5 @@
 import ProductCard from "@/components/frontend/ProductCard";
+import PageHeader from "@/components/shared/PageHeader";
 import CategoriesWiseProduct from "@/constant/DummyCategoriesWiseProduct";
 import { Product } from "@/lip/types/product";
 import Image from "next/image";
@@ -6,21 +7,11 @@ import Link from "next/link";
 
 const CategoriesPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="container mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl font-bold text-gray-900">
-            Beauty Care Categories
-          </h1>
-          <p className="mt-2 text-sm text-gray-600">
-            Explore our range of beauty care products
-          </p>
-        </div>
-      </header>
+    <div className="min-h-screen bg-gray-50 pt-20">
+      <PageHeader />
 
       {/* Main Content */}
-      <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto py-8  ">
         {CategoriesWiseProduct.map((category) => (
           <section key={category.slug} className="mb-12">
             {/* Category Header */}

@@ -12,10 +12,12 @@ export default function AuthLayout({
   return (
     <div className=" auth-gradient">
       <Header />
-      <main className="flex flex-col items-center justify-center py-20 px-4 relative">
-        <div className="w-full h-full">{children}</div>
+      <main className=" max-h-screen">
+        <div className="max-h-screen w-full h-full  py-20 px-4 ">
+          {children}
+        </div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

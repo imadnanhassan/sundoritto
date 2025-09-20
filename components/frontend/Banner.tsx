@@ -112,7 +112,7 @@ const Banner = () => {
   const currentSlideData = slides[currentSlide];
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-black -mt-32">
+    <div className="relative h-screen w-full overflow-hidden bg-black mt-12">
       {/* Background Images */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (

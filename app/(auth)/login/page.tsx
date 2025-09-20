@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { Eye, EyeOff, Lock } from "lucide-react";
 import { toast } from "sonner";
-
+import { useRouter } from "next/navigation";
 interface LoginFormData {
   email: string;
   password: string;
@@ -16,6 +16,8 @@ export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  const router = useRouter();
+
   const {
     register,
     handleSubmit,
@@ -23,9 +25,9 @@ export default function LoginPage() {
     formState: { errors, isValid },
   } = useForm<LoginFormData>({
     defaultValues: {
-      email: "",
-      password: "",
-      rememberMe: false,
+      email: "sundoritto@example.comq",
+      password: "password123",
+      rememberMe: true,
     },
     mode: "onChange",
   });
@@ -36,12 +38,13 @@ export default function LoginPage() {
       console.log("Login data:", data);
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 2000));
+
       toast.success("Login successful", {
         description: "Welcome back to Sundoritto",
         duration: 3000,
         richColors: true,
       });
-      // router.push('/dashboard');
+      router.push("/user/account");
     } catch (error) {
       console.error("Login error:", error);
       toast.error("Login failed", {

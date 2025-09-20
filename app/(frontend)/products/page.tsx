@@ -4,15 +4,18 @@ import { useState } from "react";
 import { Star, LayoutGrid, List, Grid3X3 } from "lucide-react";
 import ProductCard from "@/components/frontend/ProductCard";
 import { products } from "@/constant/DummayProduct";
+import PageHeader from "@/components/shared/PageHeader";
 
 const ProductsPage = () => {
   const [viewMode, setViewMode] = useState<"grid" | "list" | "compact">("grid");
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 py-20">
+    <div className="min-h-screen bg-gray-50 p-6 pt-20">
+      <PageHeader />
+
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 py-14">
         {/* Sidebar Filters */}
-        <div className="bg-white text-background rounded-lg shadow-sm border border-primary-foreground p-6 space-y-6">
+        <div className="bg-white text-background rounded-lg shadow-sm border border-primary-foreground p-6 space-y-6 h-[700px]">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-lg font-medium">Filters</h2>
             <button className="text-red-500 text-sm font-medium hover:underline">
